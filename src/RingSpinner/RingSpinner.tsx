@@ -28,7 +28,13 @@ const InnerSpinner = styled.circle<ISpinner>`
   transform-origin: center;
 `;
 
-const RingSpinner = ({ size, color, speed, weight, style }: SpinnerProps) => {
+const RingSpinner = ({
+  size = 50,
+  color = "#000",
+  speed = 2,
+  weight = 3,
+  style,
+}: SpinnerProps) => {
   return (
     <div style={{ width: size, height: size, ...style }}>
       <svg viewBox="0 0 50 50">
@@ -40,11 +46,3 @@ const RingSpinner = ({ size, color, speed, weight, style }: SpinnerProps) => {
 };
 
 export default RingSpinner;
-
-RingSpinner.defaultProps = {
-  size: "50px",
-  color: "black",
-  speed: 2,
-  weight: 3,
-  style: {},
-};

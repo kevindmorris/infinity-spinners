@@ -17,10 +17,10 @@ const Spinner = styled.circle<ISpinner>`
 `;
 
 const CircadianSpinner = ({
-  size,
-  color,
-  speed,
-  weight,
+  size = 50,
+  color = "#000",
+  speed = 2,
+  weight = 3,
   style,
 }: SpinnerProps) => {
   return (
@@ -33,11 +33,3 @@ const CircadianSpinner = ({
 };
 
 export default CircadianSpinner;
-
-CircadianSpinner.defaultProps = {
-  size: "50px",
-  color: "black",
-  speed: 2,
-  weight: 3,
-  style: {},
-};

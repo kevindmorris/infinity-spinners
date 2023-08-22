@@ -26,10 +26,10 @@ const Path = styled.circle<ISpinner>`
 `;
 
 const OrbitalSpinner = ({
-  size,
-  color,
-  speed,
-  weight,
+  size = 50,
+  color = "#000",
+  speed = 2,
+  weight = 3,
   style,
 }: SpinnerProps) => {
   return (
@@ -43,11 +43,3 @@ const OrbitalSpinner = ({
 };
 
 export default OrbitalSpinner;
-
-OrbitalSpinner.defaultProps = {
-  size: "50px",
-  color: "black",
-  speed: 2,
-  weight: 3,
-  style: {},
-};

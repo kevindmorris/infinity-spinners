@@ -16,7 +16,13 @@ const Spinner2 = styled(Spinner)`
   animation-delay: -${(props) => (props.speed ? props.speed / 2 : 1)}s;
 `;
 
-const PulseSpinner = ({ size, color, speed, weight, style }: SpinnerProps) => {
+const PulseSpinner = ({
+  size = 50,
+  color = "#000",
+  speed = 2,
+  weight = 3,
+  style,
+}: SpinnerProps) => {
   return (
     <div style={{ width: size, height: size, ...style }}>
       <svg viewBox="0 0 50 50">
@@ -28,11 +34,3 @@ const PulseSpinner = ({ size, color, speed, weight, style }: SpinnerProps) => {
 };
 
 export default PulseSpinner;
-
-PulseSpinner.defaultProps = {
-  size: "50px",
-  color: "black",
-  speed: 2,
-  weight: 3,
-  style: {},
-};

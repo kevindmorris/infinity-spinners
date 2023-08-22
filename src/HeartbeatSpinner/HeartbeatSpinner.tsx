@@ -14,10 +14,10 @@ const Spinner = styled.circle<ISpinner>`
 `;
 
 const HearbeatSpinner = ({
-  size,
-  color,
-  speed,
-  weight,
+  size = 50,
+  color = "#000",
+  speed = 2,
+  weight = 3,
   style,
 }: SpinnerProps) => {
   return (
@@ -30,11 +30,3 @@ const HearbeatSpinner = ({
 };
 
 export default HearbeatSpinner;
-
-HearbeatSpinner.defaultProps = {
-  size: "50px",
-  color: "black",
-  speed: 2,
-  weight: 3,
-  style: {},
-};

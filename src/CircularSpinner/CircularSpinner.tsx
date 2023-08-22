@@ -16,10 +16,10 @@ const Spinner = styled.circle<ISpinner>`
 `;
 
 const CircularSpinner = ({
-  size,
-  color,
-  speed,
-  weight,
+  size = 50,
+  color = "#000",
+  speed = 2,
+  weight = 3,
   style,
 }: SpinnerProps) => {
   return (
@@ -32,11 +32,3 @@ const CircularSpinner = ({
 };
 
 export default CircularSpinner;
-
-CircularSpinner.defaultProps = {
-  size: "50px",
-  color: "black",
-  speed: 2,
-  weight: 3,
-  style: {},
-};

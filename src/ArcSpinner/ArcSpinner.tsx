@@ -16,7 +16,13 @@ const Spinner = styled.circle<ISpinner>`
   transform-origin: center;
 `;
 
-const ArcSpinner = ({ size, color, speed, weight, style }: SpinnerProps) => {
+const ArcSpinner = ({
+  size = 50,
+  color = "#000",
+  speed = 2,
+  weight = 3,
+  style,
+}: SpinnerProps) => {
   return (
     <div style={{ width: size, height: size, ...style }}>
       <svg viewBox="0 0 50 50">
@@ -33,11 +39,3 @@ const ArcSpinner = ({ size, color, speed, weight, style }: SpinnerProps) => {
 };
 
 export default ArcSpinner;
-
-ArcSpinner.defaultProps = {
-  size: "50px",
-  color: "black",
-  speed: 2,
-  weight: 3,
-  style: {},
-};
