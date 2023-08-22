@@ -1,6 +1,6 @@
 {
   "name": "infinity-spinners",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A React component library of loading spinners.",
   "keywords": [
     "react",
@@ -28,7 +28,7 @@
   "types": "index.d.ts",
   "scripts": {
     "build": "npm run clean && vite build && tsc",
-    "clean": "rm -rf index.d.ts && rm -rf index.js && rm -rf index.mjs && rm -rf index.umd.js && rm -rf *Spinner && rm -rf utils && rm -rf _stories",
+    "clean": "rm -rf index.d.ts && rm -rf index.js && rm -rf index.mjs && rm -rf index.umd.js && rm -rf *Spinner && rm -rf utils && rm -rf stories && rm -rf storybook-static",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
     "storybook:publish": "npm run storybook:build && touch ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true"
