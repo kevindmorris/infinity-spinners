@@ -1,9 +1,0 @@
-@storybook/cli v7.1.0
-
-info => Cleaning outputDir: C:\Users\kdmor\AppData\Local\Temp\chromatic--21540-3ndHr6BmrZ3X
-info => Loading presets
-info => Building manager..
-info => Manager built (358 ms)
-info => Copying static files: C:\Users\kdmor\Documents\GitHub\infinity-spinners\node_modules\@storybook\manager\static at C:\Users\kdmor\AppData\Local\Temp\chromatic--21540-3ndHr6BmrZ3X\sb-common-assets
-WARN No story files found for the specified pattern: src\stories\**\*.stories.mdx
-[36mvite v4.4.5 [32mbuilding for production...[36m[39m

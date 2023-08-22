@@ -2,6 +2,7 @@
 .storybook
 /src
 stories
+storybook-static
 
 /**/*.stories*
 /**/*.template

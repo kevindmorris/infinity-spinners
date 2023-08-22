@@ -30,8 +30,8 @@
     "build": "npm run clean && vite build && tsc",
     "clean": "rm -rf index.d.ts && rm -rf index.js && rm -rf index.mjs && rm -rf index.umd.js && rm -rf *Spinner && rm -rf utils && rm -rf _stories",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_6f8b1ecad51f420"
+    "storybook:build": "storybook build",
+    "storybook:publish": "npm run storybook:build && touch ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true"
   },
   "devDependencies": {
     "@storybook/addon-docs": "^7.3.2",
@@ -45,8 +45,8 @@
     "@storybook/testing-library": "^0.2.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "chromatic": "^6.23.0",
     "csstype": "^3.1.2",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.1.0",
@@ -63,7 +63,5 @@
   "bugs": {
     "url": "https://github.com/kevindmorris/infinity-spinners/issues"
   },
-  "readme": "ERROR: No README data found!",
-  "homepage": "https://github.com/kevindmorris/infinity-spinners#readme",
-  "_id": "infinity-spinners@0.0.1"
+  "homepage": "https://kevindmorris.github.io/infinity-spinners"
 }
