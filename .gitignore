@@ -1,0 +1,10 @@
+/node_modules
+.storybook
+
+/*Spinner
+
+/index.js
+/index.d.ts
+/index.mjs
+/index.umd.js
+/utils

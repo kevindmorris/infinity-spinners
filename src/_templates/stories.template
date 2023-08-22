@@ -1,0 +1,26 @@
+import type { Meta, StoryObj } from "@storybook/react";
+
+import SPINNER from "../src/SPINNER/SPINNER";
+
+const meta: Meta<typeof SPINNER> = {
+  title: "Spinners/SPINNER",
+  component: SPINNER,
+};
+
+export default meta;
+type Story = StoryObj<typeof SPINNER>;
+
+export const Default: Story = {
+  args: {
+    size: "50px",
+    color: "black",
+    speed: 2,
+    weight: 3,
+    style: {},
+  },
+  argTypes: {
+    color: {
+      control: { type: "color" },
+    },
+  },
+};
